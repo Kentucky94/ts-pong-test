@@ -1,0 +1,3 @@
+# ts-pong-test
+
+# BUILD YOUR JS FILES BEFORE EXECUTION. USE tsc
