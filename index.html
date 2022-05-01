@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.exports = {};
+    </script>
+    <script src="build/index.js" type="module"></script>
+</head>
+<style>
+    #field {
+        border: 1px solid red;
+        width: calc(100vw - 50px);
+        height: calc(100vh - 50px);    
+    }
+
+    #moving, #controlled {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .fading {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: red;
+        opacity: 1;
+    }
+
+    #moving {
+        background-color: red;
+    }
+
+    #controlled {
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div id="field">
+        <div id="moving"></div>
+        <!-- <div id="controlled"></div> -->
+    </div>
+</body>
+</html>
